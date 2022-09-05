@@ -1,0 +1,37 @@
+form#search-box {
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    height: 3em;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+form#search-box > button {
+    background: hsla(104.7, 42.1%, 50.6%,.2);
+    transition: all 1s ease-in;
+    max-height: 100%;
+    padding: 9px 5px 5px 5px;
+    margin-right: 7px;
+    margin-left: 0;
+    width: 50px;
+    border-radius: 3px;
+  }
+form#search-box>button:hover{
+    background-color: inherit;
+    
+}
+form#search-box>button img {
+    max-width: 30px;
+}
+
+form#search-box > input[type="text"] {
+    outline: none;
+    background-color: inherit;
+    height: inherit;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 5px 5px 5px 10px;
+}

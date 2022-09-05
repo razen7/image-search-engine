@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    --gradient-color-1: hsla(134, 50%, 77.3%,0.5);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    font-family: 'Fugaz One', cursive;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    padding: .4em 1em;
+    margin-left: .3em;
+}
+
+.header {
+    background-color: whitesmoke;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header>img {
+    height: 2em;
+}
+
+.main-container {
+    background: linear-gradient(135deg,var(--gradient-color-1),var(--gradient-color-1)), url(images/background.gif) no-repeat center center / cover;
+    min-height: 100vh;
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 1em;
+}
+
+.search-container {
+    color: antiquewhite;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.search-container>h1 {
+    font-family: 'Fugaz One', cursive;
+    font-weight: 400;
+}
+
+.images-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.images-container>img {
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.images-container h1 {
+    margin: auto;
+    font-size: 51px;
+    font-weight: 700;
+    font-family: 'Fugaz One', cursive;
+    color: rgb(52, 202, 88);
+}
+
+.active {
+    background-color: rgb(168, 226, 182);
+}
